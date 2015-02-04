@@ -210,7 +210,8 @@ PRODUCT_PACKAGES += \
     init.crda.sh \
     init.qcom.bt.sh \
     init.qcom.coex.sh \
-    init.qcom.fm.sh
+    init.qcom.fm.sh \
+    init.qti.ims.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
