@@ -24,5 +24,5 @@ $(call inherit-product, device/smartfren/rendang/device.mk)
 PRODUCT_DEVICE := rendang
 PRODUCT_NAME := full_rendang
 PRODUCT_BRAND := Smartfren
-PRODUCT_MODEL := rendang
+PRODUCT_MODEL := G36C1H
 PRODUCT_MANUFACTURER := Haier
