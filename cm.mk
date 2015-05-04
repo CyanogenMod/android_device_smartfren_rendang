@@ -18,11 +18,11 @@ $(call inherit-product, device/smartfren/rendang/full_rendang.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_NAME := cm_rendang
-BOARD_VENDOR := smartfren
+BOARD_VENDOR := haier
 PRODUCT_DEVICE := rendang
 
-PRODUCT_GMS_CLIENTID_BASE := android-smartfren
+PRODUCT_GMS_CLIENTID_BASE := android-haier
 
-TARGET_VENDOR_PRODUCT_NAME := rendang
-TARGET_VENDOR_DEVICE_NAME := rendang
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=rendang PRODUCT_NAME=rendang
+TARGET_VENDOR_PRODUCT_NAME := G36C1H
+TARGET_VENDOR_DEVICE_NAME := G36C1H
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=G36C1H PRODUCT_NAME=G36C1H
