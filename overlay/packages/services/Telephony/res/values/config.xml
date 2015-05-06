@@ -31,4 +31,7 @@
 
     <!-- Show APN Settings for some CDMA carriers -->
     <bool name="config_show_apn_setting_cdma">true</bool>
+
+    <!-- Disable IccDepersonalizationPanel -->
+    <bool name="ignore_perso_locked_events">true</bool>
 </resources>
