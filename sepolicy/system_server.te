@@ -1,0 +1,1 @@
+allow system_server memsic_dev:chr_file rw_file_perms;
