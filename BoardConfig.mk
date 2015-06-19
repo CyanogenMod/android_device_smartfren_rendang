@@ -19,6 +19,9 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 DEVICE_PATH := device/smartfren/rendang
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
+# Enables CSVT
+TARGET_USES_CSVT := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916_X6_6171E
 
