@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_smartfren_msm8916",
+    "target_path": "kernel/smartfren/msm8916"
+  }
+]
