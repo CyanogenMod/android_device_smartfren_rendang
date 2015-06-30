@@ -180,5 +180,8 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# DPM NSRM Feature
+TARGET_LDPRELOAD := libNimsWrap.so
+
 # inherit from the proprietary version
 -include vendor/smartfren/rendang/BoardConfigVendor.mk

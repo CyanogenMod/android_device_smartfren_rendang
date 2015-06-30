@@ -158,6 +158,7 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
+vendor/lib/libqmi_client_helper.so
 
 # Radio
 -app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -204,3 +205,35 @@ etc/firmware/venus.mdt
 
 # WLAN
 lib/libwcnss_qmi.so
+
+#CNE
+etc/cne/andsfCne.xml
+etc/cne/SwimConfig.xml
+etc/permissions/cneapiclient.xml
+etc/permissions/com.quicinc.cne.xml
+bin/cnd
+framework/cneapiclient.jar
+framework/com.quicinc.cne.jar
+priv-app/CNEService/CNEService.apk
+vendor/lib/libcne.so
+vendor/lib/libcneapiclient.so
+vendor/lib/libcneconn.so
+vendor/lib/libcneqmiutils.so
+vendor/lib/libmasc.so
+vendor/lib/libNimsWrap.so
+vendor/lib/libvendorconn.so
+vendor/lib/libwqe.so
+vendor/lib/libxml.so
+
+
+#DPM
+framework/com.qti.dpmframework.jar
+framework/dpmapi.jar
+etc/dpm/dpm.conf
+etc/permissions/dpmapi.xml
+etc/dpm/nsrm/NsrmConfiguration.xml
+bin/dpmd
+vendor/lib/libdpmctmgr.so
+vendor/lib/libdpmfdmgr.so
+vendor/lib/libdpmframework.so
+vendor/lib/libdpmnsrm.so
