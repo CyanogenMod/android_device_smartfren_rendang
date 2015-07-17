@@ -1,4 +1,10 @@
 # Audio
+audio.offload.disable=1
+av.offload.enable=false
+av.streaming.offload.enable=false
+audio.offload.gapless.enabled=false
+audio.offload.pcm.16bit.enable=false
+audio.offload.pcm.24bit.enable=false
 ro.qc.sdk.audio.fluencetype=fluence
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
