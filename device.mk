@@ -184,7 +184,9 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    qcmediaplayer
+    qcmediaplayer \
+    libqcomvisualizer \
+    libqcompostprocbundle
 
 PRODUCT_BOOT_JARS += \
     qcmediaplayer
