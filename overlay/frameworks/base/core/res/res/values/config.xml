@@ -154,4 +154,6 @@
     <!--  Disable Modem Profiles for CDMA -->
     <bool name="config_fetch_apn_from_omh_card">false</bool>
 
+    <bool name="config_wifiApFirmwareReload">true</bool>
+
 </resources>
