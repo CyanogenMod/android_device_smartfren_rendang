@@ -15,6 +15,9 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="enabled_networks_4g_choices" translatable="false">
+        <item>@string/network_2G</item>
+    </string-array>
     <string-array name="enabled_networks_choices" translatable="false">
         <item>@string/network_2G</item>
     </string-array>
