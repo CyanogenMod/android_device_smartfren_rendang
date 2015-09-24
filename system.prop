@@ -42,3 +42,6 @@ ro.sys.fw.bservice_age=5000
 
 # set max background services
 ro.config.max_starting_bg=8
+
+# use 3 threads max for dex2oat
+ro.sys.fw.dex2oat_thread_count=3
