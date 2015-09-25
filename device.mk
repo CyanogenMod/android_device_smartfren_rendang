@@ -67,6 +67,10 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.usb.id.ums=2286 \
     ro.usb.id.ums_adb=2285
 
+# Display
+PRODUCT_PACKAGES += \
+    pp_calib_data_ILI9806E_fwvga__hsd_helitai_video_mode_dsi_panel.xml
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
