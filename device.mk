@@ -35,8 +35,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
 
-$(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -56,9 +55,24 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libmm-qcamera
 
+# Charger
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.usb.vid=201E \
+    ro.usb.id.charge=F006 \
+    ro.usb.id.mtp=2282 \
+    ro.usb.id.mtp_adb=2281 \
+    ro.usb.id.ptp=2284 \
+    ro.usb.id.ptp_adb=2283 \
+    ro.usb.id.ums=2286 \
+    ro.usb.id.ums_adb=2285
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
+# Include IMSEnabler
+PRODUCT_PACKAGES += \
+    IMSEnabler
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
@@ -86,6 +100,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PACKAGES += \
+    init.qti.ims.sh \
+    libqcomvisualizer \
+    libqcompostprocbundle \
     fstab.qcom \
     init.cne.rc \
     init.target.rc \
@@ -103,5 +120,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
 
+# Wifi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
+# VT
+PRODUCT_PACKAGES += \
+    libvt_jni \
+    libimscamera_jni \
+    qti_permissions.xml
+
