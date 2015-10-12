@@ -905,6 +905,17 @@ typedef struct {
     float            crop_factor;
 } cam_sensor_params_t;
 
+typedef enum {
+    CAM_METERING_MODE_UNKNOWN = 0,
+    CAM_METERING_MODE_AVERAGE = 1,
+    CAM_METERING_MODE_CENTER_WEIGHTED_AVERAGE = 2,
+    CAM_METERING_MODE_SPOT = 3,
+    CAM_METERING_MODE_MULTI_SPOT = 4,
+    CAM_METERING_MODE_PATTERN = 5,
+    CAM_METERING_MODE_PARTIAL = 6,
+    CAM_METERING_MODE_OTHER = 255,
+} cam_metering_mode_t;
+
 typedef struct {
     float exp_time;
     float real_gain;
