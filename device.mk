@@ -80,9 +80,18 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
-# Include IMSEnabler
+
+# IMS
 PRODUCT_PACKAGES += \
-    IMSEnabler
+    IMSEnabler \
+    init.qti.ims.sh \
+    ims \
+    imscmlibrary
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ims/imscm.xml:system/etc/permissions/imscm.xml \
+    $(LOCAL_PATH)/configs/ims/ims.xml:system/etc/permissions/ims.xml \
+    $(LOCAL_PATH)/configs/ims/qti_permissions.xml:system/etc/permissions/qti_permissions.xml
 
 
 PRODUCT_COPY_FILES += \
@@ -111,13 +120,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_PACKAGES += \
-    init.qti.ims.sh \
     libqcomvisualizer \
     libqcompostprocbundle \
     fstab.qcom \
     init.cne.rc \
     init.target.rc \
     init.qcom.usb.rc
+
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(LOCAL_PATH)/rendang-releasekey
@@ -139,9 +148,4 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
-# VT
-PRODUCT_PACKAGES += \
-    libvt_jni \
-    libimscamera_jni \
-    qti_permissions.xml
 
