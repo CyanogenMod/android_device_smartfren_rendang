@@ -55,6 +55,17 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libmm-qcamera
 
+# Connectivity Engine support (CNE)
+PRODUCT_PACKAGES += \
+    CNEService \
+    cneapiclient \
+    com.quicinc.cne
+
+# DPM
+PRODUCT_PACKAGES += \
+    com.qti.dpmframework \
+    dpmapi
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
