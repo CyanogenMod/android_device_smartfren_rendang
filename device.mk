@@ -66,6 +66,17 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.usb.id.ums=2286 \
     ro.usb.id.ums_adb=2285
 
+# Connectivity Engine support (CNE)
+PRODUCT_PACKAGES += \
+    CNEService \
+    cneapiclient \
+    com.quicinc.cne
+
+# DPM
+PRODUCT_PACKAGES += \
+    com.qti.dpmframework \
+    dpmapi
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
