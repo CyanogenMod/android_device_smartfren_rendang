@@ -35,6 +35,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <math.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
+#include <errno.h>
 
 //++add by memsic
 #include "CompassAlgo.h"
