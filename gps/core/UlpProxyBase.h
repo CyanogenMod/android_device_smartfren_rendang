@@ -30,11 +30,13 @@
 #define ULP_PROXY_BASE_H
 
 #include <gps_extended.h>
-#include "fused_location_extended.h"
 
 namespace loc_core {
 
 class LocAdapterBase;
+
+struct FlpExtLocation_s;
+struct FlpExtBatchOptions;
 
 class UlpProxyBase {
 public:
@@ -73,7 +75,7 @@ public:
                                               bool active) {
         return false;
     }
-    inline virtual bool reportPositions(const FlpExtLocation* locations,
+    inline virtual bool reportPositions(const struct FlpExtLocation_s* locations,
                                         int32_t number_of_locations) {
         return false;
     }
