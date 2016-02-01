@@ -21,6 +21,7 @@ ril.ecclist=112,911,110,122,119,120,000,118
 ril.ecclist1=112,911,110,122,119,120,000,118
 ril.subscription.types=RUIM
 persist.radio.rat_on=combine
+rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
 
 ro.cdma.force_plmn_lookup=true
 ro.cdma.home.operator.alpha=Smartfren
